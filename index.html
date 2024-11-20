@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeCrypt - Genera contraseñas seguras</title>
+  <!-- Normalize 8.0.1 -->
+  <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+  <!-- Flexbox Grid 6.3.1 -->
+  <link rel="stylesheet" href="assets/css/flexboxgrid.css" type="text/css">
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/38dc61d947.js" crossorigin="anonymous"></script>
+  <!-- Custom Stiles -->
+  <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+</head>
+<body>
+  <div>
+    <header>
+      <h1>SafeCrypt</h1>
+      <h2>PassWord</h2>
+      <p>Genera contraseñas seguras</p>
+    </header>
+    <main>
+      <div>
+        <label for="password-length">Longitud de contraseña</label>
+        <input type="number" name="password-length" id="password-length" min="8" max="16" value="8">
+      </div>
+      <div>
+        <input type="button" id="generate-password" value="Generar">
+        <input type="button" id="clean-password" value="Limpiar">
+      </div>
+      <div>
+        <input type="text" name="generated-password" id="generated-password" placeholder="Contraseña">
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p><i class="fa-regular fa-copyright"></i> CARO Web & Design. Todos los derechos reservados.</p>
+      </div>
+      <div>
+        <ul>
+          <li><i class="fa-brands fa-github"></i></li>
+          <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
