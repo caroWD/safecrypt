@@ -6,44 +6,46 @@
   <title>SafeCrypt - Genera contraseñas seguras</title>
   <!-- Normalize 8.0.1 -->
   <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
-  <!-- Flexbox Grid 6.3.1 -->
-  <link rel="stylesheet" href="assets/css/flexboxgrid.css" type="text/css">
   <!-- Font Awesome Kit -->
   <script src="https://kit.fontawesome.com/38dc61d947.js" crossorigin="anonymous"></script>
   <!-- Custom Stiles -->
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
-<body>
-  <div>
-    <header>
-      <h1>SafeCrypt</h1>
-      <h2>PassWord</h2>
-      <p>Genera contraseñas seguras</p>
-    </header>
-    <main>
-      <div>
-        <label for="password-length">Longitud de contraseña</label>
-        <input type="number" name="password-length" id="password-length" min="8" max="16" value="8">
+<body class="d-flex fd-column jc-center">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <header class="container__header">
+          <h1 class="header__title"><span>Safe</span>Crypt</h1>
+          <h2 class="header__subtitle">PassWord</h2>
+          <p class="header_description">Genera contraseñas seguras</p>
+        </header>
+        <main class="container__main d-flex fd-column">
+          <div class="main__password-length d-flex fd-row ai-center">
+            <label for="password-length">Cantidad de caracteres</label>
+            <input class="password-length__number" type="number" name="password-length" id="password-length" min="8" max="16" value="8">
+          </div>
+          <div class="main__buttons d-flex fd-row">
+            <input class="buttons__btn btn-generate ta300-easeinout" type="button" id="generate-password" value="Generar">
+            <input class="buttons__btn btn-clean ta300-easeinout" type="button" id="clean-password" value="Limpiar">
+          </div>
+          <div class="main__display d-flex fd-row">
+            <input class="display__text ta-center" type="text" name="generated-password" id="password-display" placeholder="Contraseña">
+          </div>
+        </main>
+        <footer class="container__footer d-flex fd-column">
+          <div class="footer__copyright ta-center">
+            <p><i class="fa-regular fa-copyright"></i> caroW&D. Todos los derechos reservados.</p>
+          </div>
+          <div class="footer__social">
+            <ul class="d-flex fd-row jc-center">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer" class="ta300-easeinout"><i class="fa-brands fa-github"></i></a></i></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer" class="ta300-easeinout"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </footer>
       </div>
-      <div>
-        <input type="button" id="generate-password" value="Generar">
-        <input type="button" id="clean-password" value="Limpiar">
-      </div>
-      <div>
-        <input type="text" name="generated-password" id="generated-password" placeholder="Contraseña">
-      </div>
-    </main>
-    <footer>
-      <div>
-        <p><i class="fa-regular fa-copyright"></i> CARO Web & Design. Todos los derechos reservados.</p>
-      </div>
-      <div>
-        <ul>
-          <li><i class="fa-brands fa-github"></i></li>
-          <li><i class="fa-brands fa-linkedin-in"></i></li>
-        </ul>
-      </div>
-    </footer>
+    </div>
   </div>
 </body>
 </html>
